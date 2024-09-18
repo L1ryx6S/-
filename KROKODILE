@@ -1,0 +1,25 @@
+import random
+import time
+animals = ["Удав","Медведь","Уж","Лиса","Крокодил","Волк","Барсук","Енот","Белка","Лось"]
+while True:
+    print('Приветствую вас в игре Крокодил!')
+    print('Тема игры - Животные')
+    print('Ваше животное...')
+    time.sleep(2)
+    
+    #Создай рандомный список
+    animals_random = random.choice(animals)
+    print(animals_random)
+    time.sleep(1)
+    print('У вас 30 секунд на объяснение')
+    
+    #Создай таймер
+    for i in range(30,0,-1):
+        print(i)
+        time.sleep(1)
+    print('Время вышло!')
+    q1 = input('Хотите продолжить?')
+    if q1 == 'Да':
+        print('Игра продолжается!')
+    else:
+        break
